@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PulseFit Gym</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+    .active-tab {
+      background-color: #22c55e;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 bg-gray-950">
+    <h1 class="text-2xl font-bold">Pulse<span class="text-green-500">Fit</span></h1>
+    <nav class="hidden md:flex space-x-6 text-sm">
+      <a href="#features" class="hover:text-green-400">Features</a>
+      <a href="#trainers" class="hover:text-green-400">Trainers</a>
+      <a href="#testimonials" class="hover:text-green-400">Testimonials</a>
+      <a href="#login" class="hover:text-green-400">Login</a>
+    </nav>
+    <a href="#join" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded hidden md:inline-block">
+      Join Now
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1599058917212-d750089bcaa0?auto=format&fit=crop&w=1470&q=80');">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="z-10 text-center px-6">
+      <h2 class="text-5xl font-extrabold mb-4">Train Hard. Stay Fit.</h2>
+      <p class="text-xl mb-6">Your transformation starts here.</p>
+      <a href="#join" class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-full font-semibold">
+        Get Started
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 px-6 bg-gray-800 text-center">
+    <h3 class="text-3xl font-bold mb-10">Why Choose PulseFit</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-700 p-6 rounded-lg hover:scale-105 transition-transform">
+        <h4 class="text-xl font-bold mb-2">Modern Equipment</h4>
+        <p class="text-gray-300">Access state-of-the-art fitness equipment designed for all levels.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg hover:scale-105 transition-transform">
+        <h4 class="text-xl font-bold mb-2">Certified Trainers</h4>
+        <p class="text-gray-300">Work with top-tier professionals who care about your progress.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg hover:scale-105 transition-transform">
+        <h4 class="text-xl font-bold mb-2">Flexible Plans</h4>
+        <p class="text-gray-300">Join with affordable daily, monthly, or annual memberships.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers Section -->
+  <section id="trainers" class="py-20 px-6 bg-gray-900 text-center">
+    <h3 class="text-3xl font-bold mb-10">Meet Our Trainers</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-4 rounded hover:shadow-lg">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-full mx-auto w-24 h-24 mb-4" />
+        <h4 class="text-xl font-bold">Jason Max</h4>
+        <p class="text-gray-400">Strength Coach</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded hover:shadow-lg">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-full mx-auto w-24 h-24 mb-4" />
+        <h4 class="text-xl font-bold">Emily Cruz</h4>
+        <p class="text-gray-400">Cardio Trainer</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded hover:shadow-lg">
+        <img src="https://randomuser.me/api/portraits/men/35.jpg" class="rounded-full mx-auto w-24 h-24 mb-4" />
+        <h4 class="text-xl font-bold">Derek Lee</h4>
+        <p class="text-gray-400">CrossFit Coach</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 px-6 bg-gray-800 text-center">
+    <h3 class="text-3xl font-bold mb-10">What Members Say</h3>
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <blockquote class="bg-gray-700 p-6 rounded shadow-md">
+        <p class="text-lg italic mb-2">"PulseFit completely changed my lifestyle. Great vibes, great results!"</p>
+        <cite class="text-sm text-green-400">– Priya Sharma</cite>
+      </blockquote>
+      <blockquote class="bg-gray-700 p-6 rounded shadow-md">
+        <p class="text-lg italic mb-2">"The trainers here are amazing and really care about your goals."</p>
+        <cite class="text-sm text-green-400">– Ravi Verma</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Login/Register Section -->
+  <section id="login" class="py-20 px-6 bg-gray-900 text-center">
+    <h3 class="text-3xl font-bold mb-8">Login or Register</h3>
+    <div class="max-w-md mx-auto bg-gray-800 p-6 rounded">
+      <div class="flex mb-4">
+        <button id="loginTab" class="w-1/2 py-2 font-bold border-r border-gray-700 active-tab">Login</button>
+        <button id="registerTab" class="w-1/2 py-2 font-bold">Register</button>
+      </div>
+
+      <form id="loginForm" class="space-y-4">
+        <input type="email" placeholder="Email" class="w-full p-2 rounded bg-gray-700 border border-gray-600" />
+        <input type="password" placeholder="Password" class="w-full p-2 rounded bg-gray-700 border border-gray-600" />
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 py-2 rounded font-bold">Login</button>
+      </form>
+
+      <form id="registerForm" class="space-y-4 hidden">
+        <input type="text" placeholder="Full Name" class="w-full p-2 rounded bg-gray-700 border border-gray-600" />
+        <input type="email" placeholder="Email" class="w-full p-2 rounded bg-gray-700 border border-gray-600" />
+        <input type="password" placeholder="Password" class="w-full p-2 rounded bg-gray-700 border border-gray-600" />
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 py-2 rounded font-bold">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="join" class="py-20 px-6 bg-gradient-to-r from-green-500 to-green-700 text-center text-white">
+    <h3 class="text-3xl font-bold mb-4">Ready to Transform Your Life?</h3>
+    <p class="mb-6 text-lg">Join PulseFit today and become the strongest version of yourself.</p>
+    <a href="#login" class="bg-white text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+      Join Now
+    </a>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="bg-gray-950 py-8 text-center text-sm text-gray-400">
+
+    <div class="mb-3">
+      <p>📞 Contact: +91 98765 43210</p>
+      <p>📧 Email: info@pulsefitgym.com</p>
+    </div>
+    <div class="space-x-6 text-xl text-white">
+    <a href="#" class="hover:text-green-400" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="hover:text-green-400" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="hover:text-green-400" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="hover:text-green-400" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" class="hover:text-green-400" aria-label="Threads"><i class="fab fa-threads"></i></a>
+    <a href="#" class="hover:text-green-400" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#" class="hover:text-green-400" aria-label="Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+
+    <div class="mt-4 text-xs">&copy; 2025 PulseFit. All rights reserved.</div>
+  </footer>
+
+  <!-- JavaScript for Tab Switching -->
+  <script>
+    const loginTab = document.getElementById('loginTab');
+    const registerTab = document.getElementById('registerTab');
+    const loginForm = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
+
+    loginTab.onclick = () => {
+      loginTab.classList.add('active-tab');
+      registerTab.classList.remove('active-tab');
+      loginForm.classList.remove('hidden');
+      registerForm.classList.add('hidden');
+    };
+
+    registerTab.onclick = () => {
+      registerTab.classList.add('active-tab');
+      loginTab.classList.remove('active-tab');
+      loginForm.classList.add('hidden');
+      registerForm.classList.remove('hidden');
+    };
+  </script>
+
+</body>
+</html>
