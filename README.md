@@ -1,4 +1,4 @@
-# 💪 PulseFit – Fitness Center Website (Frontend Only)
+# 💪 PulseFit – Fitness Center Website
 
 This is the **frontend implementation** of a modern, mobile-responsive fitness center website designed with **HTML5**, **CSS3**, and **Tailwind CSS**, focusing on a clean UI/UX and ease of navigation for both users and trainers.
 
